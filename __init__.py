@@ -42,4 +42,4 @@ class HeartMonitor(MycroftSkill):
 
 
 def create_skill():
-    return HelloWorldSkill()
+    return HeartMonitor()
