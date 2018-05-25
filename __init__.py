@@ -34,7 +34,7 @@ class HeartMonitor(MycroftSkill):
         self.register_intent(what_my_heart_rate, self.handle_what_my_heart_rate)
 
     def handle_what_my_heart_rate(self, message):
-        self.speak_dialog("Okay, please put your finger on the webcam and wait for the signal to stabilize.")
+        self.speak_dialog("heart.monitor")
         os.system("finger_heart_rate_monitor.py")
         
     def stop(self):
